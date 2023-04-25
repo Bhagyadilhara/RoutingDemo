@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'forgot-password', component: ForgotPasswordComponent},
   {path: '', redirectTo: '/login', pathMatch: 'full'},
 
-  //lazyloading
+  //lazyloading-----
   {path: 'admin' ,
     loadChildren:()=> 
     import('./modules/admin/admin.module').then((m) => m.AdminModule)},
